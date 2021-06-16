@@ -20,8 +20,7 @@ margin: auto;
 
 export const Item = styled.div`
 display: flex;
-
-/*color: white;  */
+color: white;  
 overflow: hidden;
 border-bottom: 8px solid #222;
 padding:  50px 5%;
