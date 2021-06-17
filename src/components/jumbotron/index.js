@@ -49,6 +49,7 @@ Jumbotron.Title.propTypes = {
     children: PropTypes.any,
 };
 
+
 Jumbotron.Pane.propTypes = {
     children: PropTypes.any,
 };
