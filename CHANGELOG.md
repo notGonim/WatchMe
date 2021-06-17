@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/notGonim/WatchMe/compare/v0.1.5...v0.1.6) (2021-06-17)
+
+
+### Features
+
+* FAQs ([2abfb3d](https://github.com/notGonim/WatchMe/commit/2abfb3de8ec5a550471f1a9cfe6370dfaf8b9244))
+
 ### [0.1.5](https://github.com/notGonim/WatchMe/compare/v0.1.4...v0.1.5) (2021-06-17)
 
 
