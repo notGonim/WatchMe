@@ -1,9 +1,9 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Title, Frame, Item, Header, Container, Inner, Body } from './styles/according'
+import ToggleProvider  from '../../context/toggle/toggle.context'
+import {ToggleContext}  from '../../context/toggle/toggle.context.js'
 
-
-export const toggleContext = createContext()
 
 export default function According({ children, ...restProps }) {
 
@@ -28,16 +28,14 @@ According.Frame = function AccordingFrame({ children, ...restProps }) {
 
 
 According.Item = function AccordingItem({ children, ...restProps }) {
-    const [toggleShow, setToggleShow] = useState(false)
 
     return (
-        <toggleContext.Provider value={{ toggleShow, setToggleShow }}>
+        <ToggleProvider>
             <Item  {...restProps}> {children}</Item>
-        </toggleContext.Provider>
-    )
+        </ToggleProvider>)
 }
 According.Header = function AccordingHeader({ children, ...restProps }) {
-    const { toggleShow, setToggleShow } = useContext(toggleContext)
+    const {toggleShow, setToggleShow} = useContext(ToggleContext)
 
     return <Header onClick={() => setToggleShow(!toggleShow)}{...restProps}>
         {children}
@@ -50,7 +48,7 @@ According.Header = function AccordingHeader({ children, ...restProps }) {
 }
 
 According.Body = function AccordingFrame({ children, ...restProps }) {
-    const { toggleShow } = useContext(toggleContext)
+    const { toggleShow } = useContext(ToggleContext)
     return toggleShow ? <Body {...restProps}> {children}</Body> : null
 }
 
