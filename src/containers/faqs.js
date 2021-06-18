@@ -1,6 +1,7 @@
 import faqsData from '../fixtures/faqs.json'
 import React from 'react';
 import { According } from '../constants/defaults'
+import { Form } from '../constants/defaults'
 
 
 export function FaqsContainer() {
@@ -16,6 +17,12 @@ export function FaqsContainer() {
                     </According.Item>
                 ))}
             </According.Frame>
+            <Form >
+                <Form.Input placeholder="Email Address" />
+                <Form.Button>Try it now</Form.Button>
+                <Form.Break />
+                <Form.Text>Ready to watch? Enter your email to create or restart your membership</Form.Text>
+            </Form>
         </According>
     )
 
