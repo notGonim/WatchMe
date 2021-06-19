@@ -1,6 +1,11 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch } from 'react-router-dom'
 import * as ROUTES from './constants/routes'
+
+
+import IsUserLoggedIn from "./helpers/is-user-loggedin..helper";
+import ProtectedRoute from "./helpers/protected-routes.helper";
+
 
 const Home = lazy(() => import('./pages/home'))
 const Browse = lazy(() => import('./pages/browse'))
@@ -9,29 +14,30 @@ const SignUp = lazy(() => import('./pages/sign-up'))
 
 export default function App() {
 
+  const user = null
   return (
 
     <Router>
       <Suspense fallback={<p>Loading ...</p>}>
         <Switch>
-          <Route exact path={ROUTES.HOME} >
-            <Home />
-          </Route>
-          <Route exact path={ROUTES.BROWSE} >
+          <ProtectedRoute user={user} path={ROUTES.BROWSE} exact   >
             <Browse />
-          </Route>
-          <Route exact path={ROUTES.SIGN_IN} >
+          </ProtectedRoute>
+          <IsUserLoggedIn user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}exact >
             <Login />
-          </Route>
-          <Route exact path={ROUTES.SIGN_UP} >
+          </IsUserLoggedIn>
+          <IsUserLoggedIn user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact>
+            <Home />
+          </IsUserLoggedIn>
+          <IsUserLoggedIn user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_UP} exact>
             <SignUp />
-          </Route>
+          </IsUserLoggedIn>
         </Switch>
       </Suspense>
     </Router>
-  );
-
-
+  )
 }
+
+
 
 
