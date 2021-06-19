@@ -64,7 +64,7 @@ export default function Login() {
                         New to Netflix? <LoginForm.Link to={ROUTES.SIGN_UP}>Sign up now.</LoginForm.Link>
                     </LoginForm.Text>
                     <LoginForm.TextSmall>
-                        This page is protected by Google reCAPTCHA to ensure you`re not a bot. Learn more.
+                        This page is protected by WatchMe SecurityBot to ensure you`re not a bot. Learn more.
                     </LoginForm.TextSmall>
                 </LoginForm>
             </HeaderContainer>
