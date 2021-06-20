@@ -5,6 +5,7 @@ import * as ROUTES from './constants/routes'
 
 import IsUserLoggedIn from "./helpers/is-user-loggedin..helper";
 import ProtectedRoute from "./helpers/protected-routes.helper";
+import useAuthListener from './hooks/use-auth-listener';
 
 
 const Home = lazy(() => import('./pages/home'))
@@ -14,7 +15,7 @@ const SignUp = lazy(() => import('./pages/sign-up'))
 
 export default function App() {
 
-  const user = null
+  const {user} = useAuthListener()
   return (
 
     <Router>
@@ -23,7 +24,7 @@ export default function App() {
           <ProtectedRoute user={user} path={ROUTES.BROWSE} exact   >
             <Browse />
           </ProtectedRoute>
-          <IsUserLoggedIn user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}exact >
+          <IsUserLoggedIn user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN} exact >
             <Login />
           </IsUserLoggedIn>
           <IsUserLoggedIn user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME} exact>
