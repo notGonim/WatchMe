@@ -6,4 +6,4 @@ export { default as Header } from '../components/header'
 export { default as Feature } from '../components/feature'
 export { default as LoginForm } from '../components/login-form'
 export { default as Profiles } from '../components/profile'
-
+export { default as Loading } from '../components/loading'

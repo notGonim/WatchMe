@@ -1,8 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom'
 import * as ROUTES from './constants/routes'
-
-
 import IsUserLoggedIn from "./helpers/is-user-loggedin..helper";
 import ProtectedRoute from "./helpers/protected-routes.helper";
 import useAuthListener from './hooks/use-auth-listener';
@@ -15,9 +13,9 @@ const SignUp = lazy(() => import('./pages/sign-up'))
 
 export default function App() {
 
-  const {user} = useAuthListener()
-  return (
+  const { user } = useAuthListener()
 
+  return (
     <Router>
       <Suspense fallback={<p>Loading ...</p>}>
         <Switch>
@@ -36,8 +34,11 @@ export default function App() {
         </Switch>
       </Suspense>
     </Router>
+
   )
 }
+
+
 
 
 

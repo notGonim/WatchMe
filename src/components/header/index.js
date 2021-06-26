@@ -28,7 +28,7 @@ Header.Frame = function HeaderFrame({ children, ...restProps }) {
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
     return (
         <LinkRouter to={to}>
-            <Logo {...restProps} />
+            <Logo {...restProps}  />
         </LinkRouter>
     );
 };
