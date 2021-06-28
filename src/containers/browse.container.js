@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { ProfileContainer } from './profile.container';
 import { FooterContainer } from './footer';
-import { Loading, Header, Card } from '../constants/defaults'
+import { Loading, Header, Player, Card } from '../constants/defaults'
 import useAuthListener from '../hooks/use-auth-listener';
 import * as ROUTES from '../constants/routes'
 import { FirebaseContext } from '../context/firebase/firebase.context';
@@ -85,18 +85,13 @@ export function BrowseContainer({ slides }) {
                                 </Card.Item>
                             ))}
                         </Card.Entities>
-                        {
-                            /*
-  <Card.Feature category={category}>
-                             <Player>
-                                 <Player.Button />
-                                 <Player.Video src="/videos/bunny.mp4" />
-                             </Player>
-                         </Card.Feature>
- 
- 
-                            */
-                        }
+
+                        <Card.Feature category={category}>
+                            <Player>
+                                <Player.Button />
+                                <Player.Video src={process.env.PUBLIC_URL + './videos/bunny.mp4'} />
+                            </Player>
+                        </Card.Feature>
                     </Card>
                 ))}
             </Card.Group>
