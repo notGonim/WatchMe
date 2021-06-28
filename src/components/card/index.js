@@ -15,7 +15,8 @@ import {
     Meta,
     Entities,
     Item,
-    Image,
+    Image
+    
 } from './styles/card.styles';
 import PropTypes from 'prop-types';
 
@@ -96,6 +97,11 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
         </Feature>
     ) : null;
 };
+
+Card.Image = function CardImage({ ...restProps }) {
+    return <Image {...restProps} />;
+  };
+  
 
 Card.Feature.propTypes = {
     children: PropTypes.any,
