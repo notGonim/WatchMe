@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { ProfileContainer } from './profile.container';
+import { FooterContainer } from './footer';
 import { Loading, Header, Card } from '../constants/defaults'
 import useAuthListener from '../hooks/use-auth-listener';
 import * as ROUTES from '../constants/routes'
@@ -99,7 +100,7 @@ export function BrowseContainer({ slides }) {
                     </Card>
                 ))}
             </Card.Group>
-
+            <FooterContainer />
         </>) : <ProfileContainer setProfile={setProfile} />
 
 
