@@ -6,6 +6,7 @@ import { Loading, Header, Player, Card } from '../constants/defaults'
 import useAuthListener from '../hooks/use-auth-listener';
 import * as ROUTES from '../constants/routes'
 import { FirebaseContext } from '../context/firebase/firebase.context';
+import Fuse from 'fuse.js';
 
 
 export function BrowseContainer({ slides }) {
@@ -27,7 +28,17 @@ export function BrowseContainer({ slides }) {
         setSlideRows(slides[category]);
     }, [slides, category]);
 
-
+    useEffect(() => {
+        const fuse = new Fuse(slideRows, { keys: ['data.description', 'data.title', 'data.genre'] });
+        const results = fuse.search(searchTerm).map(({ item }) => item);
+    
+        if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+          setSlideRows(results);
+        } else {
+          setSlideRows(slides[category]);
+        }
+      }, [searchTerm]);
+      
     return profile.displayName ? (
         <>
             {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
