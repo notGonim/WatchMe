@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders the <Footer /> with data 1`] = `
+<div
+  class="footer__Container-sgqpbi-0 huwCFx"
+>
+  <p
+    class="footer__Title-sgqpbi-4 eymFPX"
+  >
+    Questions?
+  </p>
+  <div
+    class="footer__Break-sgqpbi-6 hhycGA"
+  >
+    <div
+      class="footer__Row-sgqpbi-1 bWHnHc"
+    >
+      <div
+        class="footer__Column-sgqpbi-2 fNBNAN"
+      >
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           FAQ  
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           Investor Relations  
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+             Ways To Watch
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+             Corporate Information
+        </a>
+      </div>
+      <div
+        class="footer__Column-sgqpbi-2 fNBNAN"
+      >
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           Help Center  
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           Jobs  
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+             Terms Of Use
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+             Contact Us
+        </a>
+      </div>
+      <div
+        class="footer__Column-sgqpbi-2 fNBNAN"
+      >
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           Account  
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           Privacy 
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+             Speed
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+             Redeem Gift Cards
+        </a>
+      </div>
+      <div
+        class="footer__Column-sgqpbi-2 fNBNAN"
+      >
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+          Media Center  
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+          Buy Gift Cards
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+           Cookies
+        </a>
+        <a
+          class="footer__Link-sgqpbi-3 dzWFPK"
+          href="#"
+        >
+          Legal Notice
+        </a>
+      </div>
+    </div>
+  </div>
+  <p
+    class="footer__Text-sgqpbi-5 hlaoeC"
+  >
+    Netflix Egypt 
+  </p>
+</div>
+`;
