@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Jumbotron /> renders the <Jumbotron /> with populated data 1`] = `
+<div
+  class="jumbotron__Container-sc-11xlrz1-2 kkpQeT"
+>
+  <div
+    class="jumbotron__Item-sc-11xlrz1-1 kMfAsP"
+  >
+    <div
+      class="jumbotron__Inner-sc-11xlrz1-0 bMklKP"
+      direction="row"
+    >
+      <div
+        class="jumbotron__Pane-sc-11xlrz1-3 fkHQoV"
+      >
+        <h1
+          class="jumbotron__Title-sc-11xlrz1-5 kKzZWR"
+        >
+          Enjoy on your TV.
+        </h1>
+      </div>
+      <div
+        class="jumbotron__Pane-sc-11xlrz1-3 fkHQoV"
+      >
+        <img
+          alt="Tiger King on Netflix"
+          class="jumbotron__Image-sc-11xlrz1-6 dxXErT"
+          data-testid="1-jumbo-image"
+          src="/images/misc/home-tv.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="jumbotron__Item-sc-11xlrz1-1 kMfAsP"
+  >
+    <div
+      class="jumbotron__Inner-sc-11xlrz1-0 bMklKP"
+      direction="row"
+    >
+      <div
+        class="jumbotron__Pane-sc-11xlrz1-3 fkHQoV"
+      >
+        <h1
+          class="jumbotron__Title-sc-11xlrz1-5 kKzZWR"
+        >
+          Download your programmes to watch on the go.
+        </h1>
+      </div>
+      <div
+        class="jumbotron__Pane-sc-11xlrz1-3 fkHQoV"
+      >
+        <img
+          alt="Watch on mobile"
+          class="jumbotron__Image-sc-11xlrz1-6 dxXErT"
+          data-testid="2-jumbo-image"
+          src="/images/misc/home-mobile.jpg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="jumbotron__Item-sc-11xlrz1-1 kMfAsP"
+  >
+    <div
+      class="jumbotron__Inner-sc-11xlrz1-0 bMklKP"
+      direction="row"
+    >
+      <div
+        class="jumbotron__Pane-sc-11xlrz1-3 fkHQoV"
+      >
+        <h1
+          class="jumbotron__Title-sc-11xlrz1-5 kKzZWR"
+        >
+          Watch everywhere.
+        </h1>
+      </div>
+      <div
+        class="jumbotron__Pane-sc-11xlrz1-3 fkHQoV"
+      >
+        <img
+          alt="Money Heist on Netflix"
+          class="jumbotron__Image-sc-11xlrz1-6 dxXErT"
+          data-testid="3-jumbo-image"
+          src="/images/misc/home-imac.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
