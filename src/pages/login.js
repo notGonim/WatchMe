@@ -38,35 +38,35 @@ export default function Login() {
     return (
         <>
             <HeaderContainer>
-                <LoginForm>
-                    <LoginForm.Title>Sign In</LoginForm.Title>
-                    {error && <LoginForm.Error data-testid="error">{error}</LoginForm.Error>}
+                    <LoginForm>
+                        <LoginForm.Title>Sign In</LoginForm.Title>
+                        {error && <LoginForm.Error data-testid="error">{error}</LoginForm.Error>}
 
-                    <LoginForm.Base onSubmit={handleSignin} method="POST">
-                        <LoginForm.Input
-                            placeholder="Email address"
-                            value={emailAddress}
-                            onChange={({ target }) => setEmailAddress(target.value)}
-                        />
-                        <LoginForm.Input
-                            type="password"
-                            value={password}
-                            autoComplete="off"
-                            placeholder="Password"
-                            onChange={({ target }) => setPassword(target.value)}
-                        />
-                        <LoginForm.Submit disabled={isInvalid} type="submit" data-testid="sign-in">
-                            Sign In
-                        </LoginForm.Submit>
-                    </LoginForm.Base>
+                        <LoginForm.Base onSubmit={handleSignin} method="POST">
+                            <LoginForm.Input
+                                placeholder="Email address"
+                                value={emailAddress}
+                                onChange={({ target }) => setEmailAddress(target.value)}
+                            />
+                            <LoginForm.Input
+                                type="password"
+                                value={password}
+                                autoComplete="off"
+                                placeholder="Password"
+                                onChange={({ target }) => setPassword(target.value)}
+                            />
+                            <LoginForm.Submit disabled={isInvalid} type="submit" data-testid="sign-in">
+                                Sign In
+                            </LoginForm.Submit>
+                        </LoginForm.Base>
 
-                    <LoginForm.Text>
-                        New to Netflix? <LoginForm.Link to={ROUTES.SIGN_UP}>Sign up now.</LoginForm.Link>
-                    </LoginForm.Text>
-                    <LoginForm.TextSmall>
-                        This page is protected by WatchMe SecurityBot to ensure you`re not a bot. Learn more.
-                    </LoginForm.TextSmall>
-                </LoginForm>
+                        <LoginForm.Text>
+                            New to Netflix? <LoginForm.Link to={ROUTES.SIGN_UP}>Sign up now.</LoginForm.Link>
+                        </LoginForm.Text>
+                        <LoginForm.TextSmall>
+                            This page is protected by WatchMe SecurityBot to ensure you`re not a bot. Learn more.
+                        </LoginForm.TextSmall>
+                    </LoginForm>
             </HeaderContainer>
             <FooterContainer />
         </>
