@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Footer } from '../constants/defaults';
+import { Footer } from '../../constants/defaults';
 
 describe('<Footer />', () => {
 
