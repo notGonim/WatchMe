@@ -149,7 +149,7 @@ $ npm start
 - [x] ~Handle auto redirect in different cases (user logged in and trying to visit login/signup pages | user is not logged in and trying to visit any page)~
 - [x] ~Handle form validation for (Login - Signup - ForgetPassword)
 - [ ] Create modal for Movies/series to show all details/actors/eps/seasons 
-
+- [x] Create modal for Search for a Movies/series  
 - [x] Create modals for Spinner for curr-user
 - [] Create modals for kids only
 
