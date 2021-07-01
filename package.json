@@ -1,6 +1,6 @@
 {
   "name": "watchme",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "private": true,
   "dependencies": {
     "firebase": "^8.6.7",
@@ -68,7 +68,6 @@
       "html",
       "text"
     ]
-  
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
