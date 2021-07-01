@@ -19,6 +19,14 @@
 > WatchMe is streaming entertainment service that is a mimic for [Netflix](https://www.netflix.com/eg-en/) built using [Reactjs](https://reactjs.org/).
 
 
+### Build with
+- [React JS](https://reactjs.org/)
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+- [Styled-Components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [Firebase](https://firebase.google.com/)
+
+
 ### Installation
 
 1. **_Clone the repository_**
