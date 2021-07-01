@@ -9,7 +9,7 @@ export function HeaderContainer({ children }) {
 
     return (
         <>
-            <Header>
+            <Header  >
                 <Header.Frame>
                     <Header.Logo to={ROUTES.HOME} src={process.env.PUBLIC_URL + "/images/logo.svg"} alt="WatchMe Logo" />
                     <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
